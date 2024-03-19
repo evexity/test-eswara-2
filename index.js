@@ -1,11 +1,31 @@
-
 // lesson:1
 // how to talk to to console
 console.log("Hello, World!");
-console.log("I like pizza");
+console.log("Eswara wants a latte");
 window.alert("angel is smart");
 
 //this is a comment
+
+console.log("this is a comment");
+window.alert("this is a comment");
+
+let firstName = "Eswara";
+console.log(firstName);
+
+let lastName = "Anumolu";
+console.log(lastName);
+
+const nickname = "EA";
+
+if (firstName === "Eswara") {
+  console.log("Hello, Eswara!");
+}
+if else{
+  console.log("Hello," +nickname);
+} 
+else {
+  console.log("Hello, Anumolu!");
+}
 
 /*this 
 is 
@@ -13,7 +33,6 @@ a
 multiline
 comment
 */
-
 
 // lesson:2
 
@@ -26,7 +45,7 @@ comment
 let firstNane = "Bro"; //strings
 let age = 13; //number
 let student = true; //booleans
-firstName = "Bro";// to give a new value
+firstName = "Bro"; // to give a new value
 
 /*console.log(firstNane); to add text and then 
 a varible after*/
@@ -35,16 +54,15 @@ console.log("Hello", firstName);
 //console.log(age); to add age
 console.log(age);
 //to add age plus convosasion
-console.log("your are ",age,  "years old");
+console.log("your are ", age, "years old");
 
 //console. log(student) ; to add students name
-console. log("enrollled",student) ;
+console.log("enrollled", student);
 
-//how to change id's 
+//how to change id's
 document.getElementById("p1").innerHTML = "Hello" + firstName;
 document.getElementById("p2").innerHTML = "you are" + age + "years old";
-document.getElementById("p3").innerHTML = "enrolled:" + student; 
-
+document.getElementById("p3").innerHTML = "enrolled:" + student;
 
 // lesson:3
 /* 
@@ -55,7 +73,7 @@ that Can be evaluated to a value
 ex. y= x + 5;
 */
 
-let  students = 20;
+let students = 20;
 let extrastudents = students % 2;
 
 //students = students + 1;
@@ -71,7 +89,6 @@ if number of students is even or odd*/
 //students *= 2;
 //students /= 2;
 
-
 //console.log(students);
 //console.log(extrastudents);
 
@@ -83,10 +100,8 @@ operator precedence
 4. addition & subtraction
 */
 
-let result = (1 + 2) * (3+4);
+let result = (1 + 2) * (3 + 4);
 console.log(result);
-
-
 
 // lesson:4
 // How to accept user input
@@ -103,14 +118,13 @@ console.log(username);*/
  * assigns it to the variable "username", and logs the value to the console.
  */
 
-const myButton = 'myButton';
-const myText = 'myText';
-const myLabel = 'myLabel';
+const myButton = "myButton";
+const myText = "myText";
+const myLabel = "myLabel";
 
 let username;
-document.getElementById(myButton).onclick = function() {
-    username = document.getElementById(myText).value;
-    console.log(username);
-    document.getElementById(myLabel).innerHTML = "Hello " + username;
-}
-
+document.getElementById(myButton).onclick = function () {
+  username = document.getElementById(myText).value;
+  console.log(username);
+  document.getElementById(myLabel).innerHTML = "Hello " + username;
+};

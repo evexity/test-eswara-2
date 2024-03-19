@@ -55,29 +55,23 @@ const mySubmit = document.getElementById("mySubmit");
 const resultElement = document.getElementById("resultElement");
 let age;
 
-mySubmit.onclick = function(){
-    age= myText.value;
-    age= Number(age);
-    if (age>= 100){
-        console.log("are too old to enter this site");
-        resultElement.textContent = "are too old to enter this site";
-    }
-    else if (age == 0){
-        console.log("your age cant be zero");
-        resultElement.textContent = "your age cant be zero";
-    }
-    else if (age>=18 ){
-        console.log("you are old enough to enter this site");
-        resultElement.textContent = "you are old enough to enter this site";
-    }
-    else if(age < 0){
-        console.log("your age cant be below zero");  
-        resultElement.textContent = "your age cant be below zero";
-    }
-    else{
-        console.log("you must be 18+ to enter this site");
-        resultElement.textContent = "you must be 18+ to enter this site";
-    }
-}
-
-
+mySubmit.onclick = function () {
+  age = myText.value;
+  age = Number(age);
+  if (age >= 100) {
+    console.log("are too old to enter this site");
+    resultElement.textContent = "are too old to enter this site";
+  } else if (age == 0) {
+    console.log("your age cant be zero");
+    resultElement.textContent = "your age cant be zero";
+  } else if (age >= 18) {
+    console.log("you are old enough to enter this site");
+    resultElement.textContent = "you are old enough to enter this site";
+  } else if (age < 0) {
+    console.log("your age cant be below zero");
+    resultElement.textContent = "your age cant be below zero";
+  } else {
+    console.log("you must be 18+ to enter this site");
+    resultElement.textContent = "you must be 18+ to enter this site";
+  }
+};

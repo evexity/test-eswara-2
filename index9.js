@@ -4,5 +4,7 @@
 //                   condition ? codeiftrue : codeiffalse;
 
 let age = 21;
-let message = age >= 18 ? "your are an adult" : "your a minor"
-console.log(message)
+
+let message = age >= 18 ? "your are an adult" : "your a minor";
+
+console.log(message);
